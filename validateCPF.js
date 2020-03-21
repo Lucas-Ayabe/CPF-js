@@ -39,17 +39,3 @@ function initCPFValidation(target, options) {
         }
     }
 }
-
-const cpfValidationOptions = {
-    success() {
-        console.log("CPF válido");
-    },
-    error() {
-        console.error("CPF inválido");
-    },
-    lengthError() {
-        console.error("CPF deve ter 11 digitos");
-    }
-}
-
-initCPFValidation("input.is-cpf", cpfValidationOptions);
